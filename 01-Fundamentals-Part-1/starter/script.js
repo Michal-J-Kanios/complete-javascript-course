@@ -47,8 +47,8 @@ console.log(typeof year);
 
 
 
-//LET CONST VAR
-//==============
+/*LET CONST VAR
+==============
 const birthYear = 2005; //cannot be empty
 //birthYear = 1990; would be an error, because you cannot change const variables
 var job = "programmer"; //var
@@ -58,7 +58,40 @@ marakasy = "Marakasy"; //js creates a property on the global object, avoid like 
 console.log(marakasy); //never write a variable without declaring it
 
 
-//==============
+==============*/
+
+/*BASIC OPERATORS
+==============
+const now = 2037;
+//const ageJonas = 2037 - 1991;
+//const ageSarah = 2037 - 2018;
+const ageJonas = now;
+const ageSarah = now;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 (2 * 2 * 2)
+
+const firstName = 'Jonas';
+const lastName = 'Schmedtmann';
+console.log(firstName + " " + lastName);
+
+let x = 10 + 5;
+x += 10;
+x *= 4;
+x++;
+x--;
+x--;
+console.log(x);
+
+//Comparison Operators
+console.log(ageJonas > ageSarah);
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
+===============*/
 
 
 
@@ -91,3 +124,25 @@ console.log(typeof language);
 /*const isIsland = true;
 isIsland = false;*/
 language = "Polish";
+
+//Assignment 4:
+//If your country split in half, and each half would contain half the population, then how many people would live in each half?
+//Increase the population of your country by 1 and log the result to the console.
+//Finland has a population of 6 million. Does your country have more people than Finland?
+//The average population of a country is 33 million people. Does you country have less people than the average country?
+//Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'.
+
+let halfPop = population / 2;
+console.log(`Half of Poland would have a population of ${halfPop}`);
+//ewentualnie console.log(population / 2);
+
+population++;
+console.log(population);
+
+console.log(population > 6);
+
+const lessThanAveragePop = population <= 33;
+console.log(lessThanAveragePop);
+
+let description = `${country} is in ${continent}, and its ${population} people speak ${language}.`;
+console.log(description);
