@@ -94,6 +94,25 @@ console.log(now - 1991 > now - 2018);
 ===============*/
 
 
+//Taking Decisions: if/else statements
+/*=============
+const age = 19;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+      console.log(`Sarah can start her driving license 🚗`);
+}
+else if(age == 17){
+      console.log(`Close! Very close! Wait one more year, hun 😊`);
+}
+else {
+      const yearsLeft = 18 - age;
+      console.log(`Sarah basically has skill issue tbh. Wait another ${yearsLeft} years! >:)`);
+}
+
+==============*/
+
+
 
 //ASSIGNMENTS
 //Assignment 1:
@@ -141,8 +160,20 @@ console.log(population);
 
 console.log(population > 6);
 
-const lessThanAveragePop = population <= 33;
-console.log(lessThanAveragePop);
+const checkIflessThanAveragePop = population <= 33;
+console.log(checkIflessThanAveragePop);
 
+//Assignment 4 & 5 (works for both):
 let description = `${country} is in ${continent}, and its ${population} people speak ${language}.`;
 console.log(description);
+
+//Assignment 6:
+//If your country's population is greater than 33 million, log a string like this to the console: "Portugal's population is 22 million below average" (the 22 is the average of 33 minus the country's population).
+//After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
+
+if(population > 33000000) {
+      console.log(`${country}'s population is above average!`);
+}
+else {
+      console.log(`${country}'s population is ${33000000 - population} below average`);
+}
