@@ -113,6 +113,62 @@ else {
 ==============*/
 
 
+//Truthy and Falsy values
+//=================
+      /*5 falsy values:
+      1. 0
+      2. ''
+      3. undefined
+      4. null
+      5. NaN
+      6. */
+/*
+      console.log(Boolean(0));
+      console.log(Boolean(undefined));
+      console.log(Boolean('Jonas'));
+      console.log(Boolean({}));
+      console.log(Boolean(''));
+
+      const maniManiMani = 0; //0 is falsy value, 100 is truthy value
+      if(maniManiMani) { //maniManiMani converted to boolean
+            console.log("Don't spend it all ;)");
+      }
+      else {
+            console.log("You should get a job!");
+      }
+
+=================*/
+
+
+//Equality Operators: == vs. ===
+/*======================
+      const wiek = 18;
+      if(wiek === 18) console.log("You just became an adult! :D (strict)");
+
+      if(wiek == 18) console.log("you jest became an adult! :D (loose)");
+
+      //const favourite = prompt("What's your favourite number?");
+      //THE UPPER VERSION WILL NOT WORK WITH "===", BECAUSE THE PROMPT IS A STRING.
+      const favourite = Number(prompt("What's your favourite number?"));
+      console.log(favourite);
+      console.log(typeof favourite);
+      
+      if(favourite === 23){
+            console.log("Cool! 23 is an amazing number!")
+      }
+      else if(favourite === 7) {
+            console.log("7 is also a cool number");
+      }
+      else {
+            console.log("Number is not 23 or 7");
+      }
+
+      if(favourite !== 23) console.log("Why not 23?");
+
+
+=================*/
+
+
 
 //ASSIGNMENTS
 //Assignment 1:
@@ -177,3 +233,25 @@ if(population > 33000000) {
 else {
       console.log(`${country}'s population is ${33000000 - population} below average`);
 }
+
+//Assignment 7:
+//Predict the result of these 5 operations without executing them:
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> 617
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+
+//Assignment 8:
+//If there is only 1 neighbour, log to the console 'Only 1 border!' (use loose equality == for now).
+//Use an else-if block to log 'More than 1 border' in case numNeighbours is greater than 1.
+//Use an else block to log 'No borders' (this block will be executed when numNeighbours is 0 or any other value).
+//Test the code with different values of numNeighbours, including 1 and 0.
+//Change == to ===, and test the code again, with the same values of numNeighbours. Notice what happens when there is exactly 1 border! Why is this happening?
+//Finally, convert numNeighbours to a number, and watch what happens now when you input 1.
+//Reflect on why we should use the === operator and type conversion in this situation.
+
+const numNeighbours = Number(prompt('How many countries neighbour yours?'));
+if(numNeighbours === 1) console.log('Only 1 border!');
+else if(numNeighbours > 1) console.log('More than 1 border.');
+else console.log("No borders?")
