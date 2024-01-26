@@ -251,6 +251,7 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 //Finally, convert numNeighbours to a number, and watch what happens now when you input 1.
 //Reflect on why we should use the === operator and type conversion in this situation.
 
+
 const numNeighbours = Number(prompt('How many countries neighbour yours?'));
 if(numNeighbours === 1) console.log('Only 1 border!');
 else if(numNeighbours > 1) console.log('More than 1 border.');
