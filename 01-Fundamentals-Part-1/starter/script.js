@@ -1,5 +1,5 @@
 /* VALUES AND VARIABLES
-======================
+====================== god damn I f*cking love EU4
 let js = 'funky';
       if (js=='funky') alert('JS is funky!');
       let result = 40 + 8 + 23 - 10;
