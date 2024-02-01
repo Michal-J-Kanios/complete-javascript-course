@@ -168,6 +168,37 @@ else {
 
 =================*/
 
+//Boolean Logic/Logical Operators
+//================
+
+      const hasDriversLicense = true; //A
+      const hasGoodVision = true; //B
+
+      console.log(hasDriversLicense && hasGoodVision);
+      console.log(hasDriversLicense || hasGoodVision);
+      console.log(!hasDriversLicense);
+
+      const shouldDrive = hasDriversLicense && hasGoodVision;
+
+      // if(shouldDrive){
+      //       console.log(`Sarah is able to drive!`)
+      // }
+      // else {
+      //       console.log(`Someone else should drive...`);
+      // }
+
+      const isTired = false;
+      console.log(hasDriversLicense || hasGoodVision || isTired);
+
+      if (hasDriversLicense && hasGoodVision && !isTired){
+            console.log(`Sarah is able to drive!`)
+      }
+      else {
+            console.log(`Someone else should drive...`);
+      }
+
+//===============
+
 
 
 //ASSIGNMENTS
@@ -251,8 +282,22 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 //Finally, convert numNeighbours to a number, and watch what happens now when you input 1.
 //Reflect on why we should use the === operator and type conversion in this situation.
 
+// const numNeighbours = Number(prompt('How many countries neighbour yours?'));
+// if(numNeighbours === 1) console.log('Only 1 border!');
+// else if(numNeighbours > 1) console.log('More than 1 border.');
+// else console.log("No borders?")
 
-const numNeighbours = Number(prompt('How many countries neighbour yours?'));
-if(numNeighbours === 1) console.log('Only 1 border!');
-else if(numNeighbours > 1) console.log('More than 1 border.');
-else console.log("No borders?")
+//Assignment 9 (logical operators):
+// Comment out the previous code so the prompt doesn't get in the way.
+// Let's say Sarah is looking for a new country to live in. She wants to live in a country that speaks English, has less than 50 million people and is not an island.
+// Write an if statement to help Sarah figure out if your country is right for her. You will need to write a condition that accounts for all of Sarah's criteria. Take your time with this, and check part of the solution if necessary.
+// If yours is the right country, log a strings like this 'You should live in Portugal :)'. If not, log 'Portugal does not meet your criteria :('.
+// Probably your country does not meet all the criteria. So go back and temporarily change some variables in order to make the condition true (unless you live in Canada :D).
+// show part of the solution if necessary
+
+if(language === 'english' && population < 50 && !isIsland){
+      console.log(`You should live in ${country} :)`);
+}
+else {
+      console.log(`${country} does not meet your strict criteria :(`);
+}
