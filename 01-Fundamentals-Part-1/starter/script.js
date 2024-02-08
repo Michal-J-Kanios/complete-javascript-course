@@ -201,7 +201,31 @@ else {
 //Switch Case
 
 
-
+// const day = 'monday';
+// switch(day){
+//       case 'monday':
+//         console.log(`Skibiduj toalete`);
+//         console.log(`Pykaj w heroesy`);
+//         break;
+//       case 'tuesday':
+//         console.log(`Course machen`);
+//         console.log(`Doing kurs`);
+//         break;
+//       case 'wednesday':
+//       case 'thursday':
+//         console.log(`Victoria 2 Gaming`);
+//         console.log(`MORE VICTORIA 2`);
+//         break;
+//       case 'friday':
+//         console.log(`Le epique hoi4 session`);
+//         break;
+//       case 'saturday':
+//       case 'sunday':
+//         console.log("Drawing");
+//         break;
+//       default:
+//         console.log(`GET OUTTA HERE! NOT A VALID DAY, DAWG!`);
+// }
 
 
 //===============
@@ -316,3 +340,28 @@ else {
 // hindi: 'Number 4';
 // arabic: '5th most spoken language';
 // for all other simply log 'Great language too :D'.
+
+const sprache = `english`;
+switch(sprache){
+      case `chinese`:
+      case `mandarin`:
+            console.log(`MOST number of native speakers!`);
+            break;
+      case `spanish`:
+            console.log(`2nd place in number of native speakers`);
+            break;
+      case `english`:
+            console.log(`3rd place`);
+            break;
+      case `hindi`:
+            console.log(`Number 4`);
+            break;
+      case `arabic`:
+            console.log(`5th most spoken language`);
+            break;
+      case `esperanto`:
+            console.log(`FUCK esp*ranto`);
+            break;
+      default:
+            console.log(`Great language too :D`);
+}
