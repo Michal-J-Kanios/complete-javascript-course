@@ -171,34 +171,40 @@ else {
 //Boolean Logic/Logical Operators
 //================
 
-      const hasDriversLicense = true; //A
-      const hasGoodVision = true; //B
+      // const hasDriversLicense = true; //A
+      // const hasGoodVision = true; //B
 
-      console.log(hasDriversLicense && hasGoodVision);
-      console.log(hasDriversLicense || hasGoodVision);
-      console.log(!hasDriversLicense);
+      // console.log(hasDriversLicense && hasGoodVision);
+      // console.log(hasDriversLicense || hasGoodVision);
+      // console.log(!hasDriversLicense);
 
-      const shouldDrive = hasDriversLicense && hasGoodVision;
+      // const shouldDrive = hasDriversLicense && hasGoodVision;
 
-      // if(shouldDrive){
+      // // if(shouldDrive){
+      // //       console.log(`Sarah is able to drive!`)
+      // // }
+      // // else {
+      // //       console.log(`Someone else should drive...`);
+      // // }
+
+      // const isTired = false;
+      // console.log(hasDriversLicense || hasGoodVision || isTired);
+
+      // if (hasDriversLicense && hasGoodVision && !isTired){
       //       console.log(`Sarah is able to drive!`)
       // }
       // else {
       //       console.log(`Someone else should drive...`);
       // }
 
-      const isTired = false;
-      console.log(hasDriversLicense || hasGoodVision || isTired);
+//===============
+//Switch Case
 
-      if (hasDriversLicense && hasGoodVision && !isTired){
-            console.log(`Sarah is able to drive!`)
-      }
-      else {
-            console.log(`Someone else should drive...`);
-      }
+
+
+
 
 //===============
-
 
 
 //ASSIGNMENTS
@@ -301,3 +307,12 @@ if(language === 'english' && population < 50 && !isIsland){
 else {
       console.log(`${country} does not meet your strict criteria :(`);
 }
+
+//Assigment 10 (switch case):
+// Use a switch statement to log the following string for the given language:
+// chinese or mandarin: 'MOST number of native speakers!';
+// spanish: '2nd place in number of native speakers';
+// english: '3rd place';
+// hindi: 'Number 4';
+// arabic: '5th most spoken language';
+// for all other simply log 'Great language too :D'.
